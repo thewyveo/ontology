@@ -1,0 +1,2155 @@
+@base <http://example.com/base/> .
+@prefix : <http://purl.obolibrary.org/obo/ncit.owl#> .
+@prefix anx: <http://AnxietyDisordersandRiskFactors.com#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://purl.obolibrary.org/obo/ncit.owl#Slc6a4%3Csup%3Em1Hubr%3C/sup%3E> a :Gene,
+    :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus .
+
+:Rattus_norvegicus a anx:Species;
+  :severity_of :anxiety_disorder, :generalized_anxiety_disorder, :post-traumatic_stress_disorder;
+  :susceptibility_to :post-traumatic_stress_disorder, :social_phobia, :anxiety_disorder,
+    :panic_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+:anxiety_disorder a anx:Disorder;
+  anx:isObservedIn :Rattus_norvegicus, :Mus_musculus, :Danio_rerio, :Homo_sapiens, :Xenopus_laevis,
+    :Xenopus_tropicalis .
+
+anx:Disorder rdfs:subClassOf :group17-Classes;
+  owl:equivalentTo :Anxiety_Disorders;
+  rdfs:label "Disorder";
+  dc:creator "kayra" .
+
+anx:Species rdfs:subClassOf :group17-Classes;
+  rdfs:label "Species";
+  dc:creator "kayra" .
+
+anx:expressedIn a owl:ObjectProperty;
+  rdfs:label "Gene/Allele is expressed in";
+  dc:creator "kayra";
+  rdfs:domain :genetic_factors;
+  rdfs:range anx:Species .
+
+anx:isObservedIn a owl:ObjectProperty;
+  rdfs:label "Disease is observed in";
+  dc:creator "kayra";
+  rdfs:domain anx:Disorder;
+  rdfs:range anx:Species .
+
+:is_implicated_in a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+<http://purl.obolibrary.org/obo/ncit.owl#WI-%3Ci%3ESlc6a4%3Csup%3Em1Hubr-/-%3C/sup%3E%3C/i%3E>
+  a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus .
+
+:is_model_of a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+<http://purl.obolibrary.org/obo/ncit.owl#Htr1a%3Csup%3Etm1Rhn%3C/sup%3E/Htr1a%3Csup%3Etm1Rhn%3C/sup%3E__%5Bbackground%3A%5D_involves%3A_129S/SvEv_%2A_129S1/Sv>
+  a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+<http://purl.obolibrary.org/obo/ncit.owl#Htr1a%3Csup%3Etm1Rhn%3C/sup%3E> a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+:Mus_musculus a anx:Species;
+  :severity_of :anxiety_disorder, :generalized_anxiety_disorder, :post-traumatic_stress_disorder;
+  :susceptibility_to :post-traumatic_stress_disorder, :social_phobia, :anxiety_disorder,
+    :panic_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+<http://purl.obolibrary.org/obo/ncit.owl#Htr1a%3Csup%3Etm1Rhn%3C/sup%3E/Htr1a%3Csup%3Etm1Rhn%3C/sup%3E__%5Bbackground%3A%5D_involves%3A_129S1/Sv>
+  a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+<http://purl.obolibrary.org/obo/ncit.owl#Zfp462%3Csup%3ETn%28pb-Act-RFP%291.090115023-HRAZhu%3C/sup%3E/Zfp462%3Csup%3E%2B%3C/sup%3E__%5Bbackground%3A%5D_involves%3A_FVB/N>
+  a :Gene;
+  :is_model_of :generalized_anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+<http://purl.obolibrary.org/obo/ncit.owl#Zfp462%3Csup%3ETn%28pb-Act-RFP%291.090115023-HRAZhu%3C/sup%3E>
+  a :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+:generalized_anxiety_disorder a anx:Disorder;
+  anx:isObservedIn :Mus_musculus, :Danio_rerio, :Drosophila_melanogaster, :Homo_sapiens,
+    :Rattus_norvegicus, :Xenopus_laevis .
+
+<http://purl.obolibrary.org/obo/ncit.owl#nr3c1%3Csup%3Es357/s357%3C/sup%3E> a :Gene;
+  :is_model_of :generalized_anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:s357 a :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:Danio_rerio a anx:Species .
+
+<http://purl.obolibrary.org/obo/ncit.owl#scn1lab%3Csup%3Es552/s552%3C/sup%3E> a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:s552 a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+<http://purl.obolibrary.org/obo/ncit.owl#slc18a2%3Csup%3Esus100/%2B%3C/sup%3E> a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:sus100 a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+<http://purl.obolibrary.org/obo/ncit.owl#slc18a2%3Csup%3Esus101/%2B%3C/sup%3E> a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:sus101 a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+<http://purl.obolibrary.org/obo/ncit.owl#cnr2%3Csup%3Eupr1/upr1%3C/sup%3E_%28NHGRI-1%29>
+  a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:upr1 a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+<http://purl.obolibrary.org/obo/ncit.owl#tsc2%3Csup%3Evu242/vu242%3C/sup%3E> a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:vu242 a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+<http://purl.obolibrary.org/obo/ncit.owl#adcyap1r1a%3Csup%3Ewz18/wz18%3C/sup%3E> a
+    :Gene;
+  :is_model_of :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:wz18 a :Allele;
+  :is_implicated_in :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:post-traumatic_stress_disorder a anx:Disorder;
+  anx:isObservedIn :Danio_rerio, :Homo_sapiens, :Rattus_norvegicus, :Mus_musculus, :Xenopus_laevis,
+    :Xenopus_tropicalis .
+
+<http://purl.obolibrary.org/obo/ncit.owl#lef1%3Csup%3Ezd11/zd11%3C/sup%3E> a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:zd11 a :Allele;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+<http://purl.obolibrary.org/obo/ncit.owl#5-HT1B%3Csup%3EKK112342%3C/sup%3E> a :Gene,
+    :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Drosophila_melanogaster a anx:Species .
+
+<http://purl.obolibrary.org/obo/ncit.owl#5-HT1B%3Csup%3EKK115609%3C/sup%3E> a :Gene,
+    :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+<http://purl.obolibrary.org/obo/ncit.owl#5-HT2A%3Csup%3EKK110704%3C/sup%3E> a :Gene,
+    :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+<http://purl.obolibrary.org/obo/ncit.owl#SerT%3Csup%3E16%3C/sup%3E> a :Gene, :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+<http://purl.obolibrary.org/obo/ncit.owl#SerT%3Csup%3EGD3824%3C/sup%3E> a :Gene, :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+<http://purl.obolibrary.org/obo/ncit.owl#SerT%3Csup%3EKK108310%3C/sup%3E> a :Gene,
+    :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+<http://purl.obolibrary.org/obo/ncit.owl#SerT%3Csup%3ETMKO%3C/sup%3E> a :Gene, :Allele;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:BDNF a :Gene;
+  :is_implicated_in :obsessive-compulsive_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_marker_via_orthology :obsessive-compulsive_disorder, :post-traumatic_stress_disorder,
+    :anxiety_disorder .
+
+:Homo_sapiens a anx:Species;
+  :susceptibility_to :post-traumatic_stress_disorder, :social_phobia, :anxiety_disorder,
+    :panic_disorder;
+  :severity_of :generalized_anxiety_disorder, :post-traumatic_stress_disorder, :anxiety_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+:obsessive-compulsive_disorder a anx:Disorder;
+  anx:isObservedIn :Homo_sapiens, :Rattus_norvegicus, :Mus_musculus, :Xenopus_laevis,
+    :Xenopus_tropicalis .
+
+:susceptibility_to a owl:ObjectProperty .
+
+:CCKBR a :Gene;
+  :is_implicated_in :panic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:panic_disorder a anx:Disorder;
+  anx:isObservedIn :Homo_sapiens, :Rattus_norvegicus, :Mus_musculus, :Xenopus_laevis .
+
+:CNTNAP2 a :Gene;
+  :is_implicated_in :social_phobia;
+  anx:expressedIn :Homo_sapiens .
+
+:social_phobia a anx:Disorder;
+  anx:isObservedIn :Homo_sapiens, :Rattus_norvegicus, :Mus_musculus, :Xenopus_laevis .
+
+:COMT a :Gene;
+  :is_implicated_in :obsessive-compulsive_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:CRH a :Gene;
+  :is_implicated_in :panic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:CRP a :Gene;
+  :is_marker_for :acute_stress_disorder, :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:acute_stress_disorder a anx:Disorder;
+  anx:isObservedIn :Homo_sapiens, :Rattus_norvegicus, :Mus_musculus, :Xenopus_laevis,
+    :Xenopus_tropicalis .
+
+:is_marker_for a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+:CTNND2 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:DRD2 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:FNTB a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:GAD1 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:GDNF a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_not_implicated_in :anxiety_disorder;
+  :is_marker_via_orthology :obsessive-compulsive_disorder .
+
+:is_not_implicated_in a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+:GPER1 a :Gene;
+  :is_marker_for :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:severity_of a owl:ObjectProperty .
+
+:HRAS a :Gene;
+  :is_implicated_in :phobic_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:phobic_disorder a anx:Disorder;
+  anx:isObservedIn :Homo_sapiens, :Rattus_norvegicus, :Mus_musculus, :Xenopus_laevis .
+
+:HTR1A a :Gene;
+  :is_implicated_in :anxiety_disorder, :panic_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder, :panic_disorder;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:HTR1B a :Gene;
+  :is_implicated_in :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder .
+
+:sexual_dimorphism_in a owl:ObjectProperty .
+
+:HTR2A a :Gene;
+  :is_implicated_in :obsessive-compulsive_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:IL2 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:MANEA a :Gene;
+  :is_implicated_in :anxiety_disorder, :panic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:MAOA a :Gene;
+  :is_implicated_in :panic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:MBL2 a :Gene;
+  :is_implicated_in :panic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:MED12 a :Gene;
+  :is_implicated_in :phobic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:NPY a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:OPRM1 a :Gene;
+  :is_implicated_in :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SLC6A4 a :Gene;
+  :is_implicated_in :anxiety_disorder, :obsessive-compulsive_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_implicated_via_orthology :generalized_anxiety_disorder, :anxiety_disorder .
+
+:TPH2 a :Gene;
+  :is_implicated_in :panic_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:Ache a :Gene;
+  :is_marker_for :acute_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :acute_stress_disorder .
+
+:Adra2a a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Arc a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_for :anxiety_disorder;
+  :is_implicated_via_orthology :anxiety_disorder;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Avpr1b a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus .
+
+:Bax a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Bcl2 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Bdnf a :Gene;
+  :is_marker_for :anxiety_disorder, :obsessive-compulsive_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :post-traumatic_stress_disorder;
+  :is_marker_via_orthology :anxiety_disorder, :post-traumatic_stress_disorder, :obsessive-compulsive_disorder .
+
+:Casp12 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Casp9 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Creb1 a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_in :obsessive-compulsive_disorder;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Cyp3a2 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus .
+
+:Dnmt3b a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Elk1 a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Esr2 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Gad1 a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Gdnf a :Gene;
+  :is_marker_for :obsessive-compulsive_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder;
+  :is_marker_via_orthology :obsessive-compulsive_disorder .
+
+:Grin2a a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Hcn1 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Hdac2 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_for :anxiety_disorder;
+  :is_marker_via_orthology :anxiety_disorder;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Hspa5 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Htr1a a :Gene;
+  :is_implicated_in :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_for :anxiety_disorder;
+  :is_implicated_via_orthology :panic_disorder, :generalized_anxiety_disorder, :anxiety_disorder;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Htr1b a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :generalized_anxiety_disorder, :anxiety_disorder .
+
+:Htr2c a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Htr7 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Kdm3b a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:L1cam a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Mc4r a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Mdm2 a :Gene;
+  :is_implicated_in :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder .
+
+:Ncor1 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Ngf a :Gene;
+  :is_marker_for :separation_anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :separation_anxiety_disorder .
+
+:separation_anxiety_disorder a anx:Disorder;
+  anx:isObservedIn :Rattus_norvegicus, :Homo_sapiens, :Mus_musculus .
+
+:Npy1r a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:Nr3c1 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Ntrk2 a :Gene;
+  :is_marker_for :anxiety_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder, :anxiety_disorder .
+
+:Pdia3 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:Pomc a :Gene;
+  :is_marker_for :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Sigmar1 a :Gene;
+  :is_implicated_in :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder .
+
+:Slc6a4 a :Gene;
+  :is_implicated_in :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder, :obsessive-compulsive_disorder .
+
+:Wfs1 a :Gene;
+  :is_marker_for :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+<http://purl.obolibrary.org/obo/ncit.owl#zf105Tg/zf105Tg_%2B_MO1-spaw> a :Gene;
+  :is_model_of :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ACHE a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:is_marker_via_orthology a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+:ADCYAP1R1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:is_implicated_via_orthology a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+:ADRA2A a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:ARC a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:BAX a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:BCL2 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:CASP12 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:CASP9 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:CNR2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:CREB1 a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:CYP3A5 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:DNMT3B a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:ELK1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:ESR2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:GRIN2A a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HCN1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HDAC2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:HSPA5 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HTR1D a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HTR1E a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HTR2B a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HTR2C a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:HTR7 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:KDM3B a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:L1CAM a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:LEF1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:MC4R a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:MDM2 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:NCOR1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:NGF a :Gene;
+  :is_marker_via_orthology :separation_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:NODAL a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:NPY1R a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:NR3C1 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:NTRK2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:PDIA3 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:POMC a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SCN1A a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SCN2A a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SCN3A a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SCN9A a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SIGMAR1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:SLC18A2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:TSC2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:WFS1 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:ZNF462 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Homo_sapiens .
+
+:Adcyap1r1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Cckbr a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Cnr2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Cntnap2 a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Comt a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Crh a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Crp a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Ctnnd2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Drd2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Fntb a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Gper1 a :Gene;
+  :is_marker_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Hras a :Gene;
+  :is_implicated_via_orthology :phobic_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Htr2a a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Htr2b a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Il2 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Lef1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Manea a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Maoa a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Mbl2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Med12 a :Gene;
+  :is_implicated_via_orthology :phobic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Nodal a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Npy a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Oprm1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Scn1a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Scn2a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Scn3a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Scn9a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Slc18a2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Tph2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Tsc2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus, :Mus_musculus .
+
+:Zfp462 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Rattus_norvegicus .
+
+:Cyp3a11 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+:Cyp3a16 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+:Cyp3a41a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+:Cyp3a41b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Mus_musculus .
+
+:bdnf.L a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:Xenopus_laevis a anx:Species;
+  :susceptibility_to :post-traumatic_stress_disorder, :social_phobia, :anxiety_disorder,
+    :panic_disorder;
+  :severity_of :generalized_anxiety_disorder, :post-traumatic_stress_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+:bdnf.S a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:cckbr.L a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:cckbr.S a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:cntnap2.L a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Xenopus_laevis .
+
+:cntnap2.S a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Xenopus_laevis .
+
+:comt.2.S a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:comt.L a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:comt.S a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:crh.L a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:crh.S a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:crp.4.L a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:crp.L a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder, :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:ctnnd2.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:drd2.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:drd2.S a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:fntb.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:fntb.S a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gad1.1.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gad1.1.S a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gad1.2.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gad1.2.S a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gdnf.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gdnf.S a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gper1.L a :Gene;
+  :is_marker_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:gper1.S a :Gene;
+  :is_marker_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:hras.L a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :phobic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:htr1a.L a :Gene;
+  :is_implicated_via_orthology :panic_disorder, :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:htr1a.S a :Gene;
+  :is_implicated_via_orthology :panic_disorder, :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:htr1b.L a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:htr1b.S a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:htr2a.L a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:htr2a.S a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:manea.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:maoa.L a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:maoa.S a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:med12.L a :Gene;
+  :is_implicated_via_orthology :phobic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:npy.L a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:npy.S a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:oprm1.L a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:oprm1.S a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:slc6a4.L a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder, :anxiety_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:slc6a4.S a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :anxiety_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:slc6a4l.L a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :anxiety_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:slc6a4l.S a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :anxiety_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:tph2.L a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:tph2.S a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_laevis .
+
+:ache a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:Xenopus_tropicalis a anx:Species;
+  :severity_of :anxiety_disorder;
+  :susceptibility_to :post-traumatic_stress_disorder .
+
+:adcyap1r1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:apcs a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:arc a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:avpr1b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:bax a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:bcl2 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:bdnf a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :obsessive-compulsive_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder, :obsessive-compulsive_disorder .
+
+:casp1 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:casp9 a :Gene .
+
+:Xenopus_tropicalis a anx:Species;
+  :susceptibility_to :anxiety_disorder, :panic_disorder;
+  :severity_of :anxiety_disorder, :generalized_anxiety_disorder, :post-traumatic_stress_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+:post-traumatic_stress_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans,
+    :Saccharomyces_cerevisiae_S288C .
+
+:casp9 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+anx:Disorder rdfs:subClassOf :group17-Classes;
+  owl:equivalentTo :Anxiety_Disorders;
+  rdfs:label "Disorder";
+  dc:creator "kayra" .
+
+anx:Species rdfs:subClassOf :group17-Classes;
+  rdfs:label "Species";
+  dc:creator "kayra" .
+
+anx:expressedIn a owl:ObjectProperty;
+  rdfs:label "Gene/Allele is expressed in";
+  dc:creator "kayra";
+  rdfs:domain :genetic_factors;
+  rdfs:range anx:Species .
+
+anx:isObservedIn a owl:ObjectProperty;
+  rdfs:label "Disease is observed in";
+  dc:creator "kayra";
+  rdfs:domain anx:Disorder;
+  rdfs:range anx:Species .
+
+:is_marker_via_orthology a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+:cnr2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:anxiety_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans,
+    :Saccharomyces_cerevisiae_S288C .
+
+:is_implicated_via_orthology a owl:ObjectProperty;
+  dc:creator "kayra" .
+
+:comt a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:obsessive-compulsive_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans .
+
+:comt.2 a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:creb1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder .
+
+:crp.1 a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder, :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:acute_stress_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans .
+
+:crp.2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:crp.4 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:ctnnd2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:susceptibility_to a owl:ObjectProperty .
+
+:drd2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:elk1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:severity_of a owl:ObjectProperty .
+
+:esr2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:fntb a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:gad1.1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:gdnf a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_marker_via_orthology :obsessive-compulsive_disorder .
+
+:gper1 a :Gene;
+  :is_marker_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:generalized_anxiety_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans .
+
+:grin2a a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:grin2b a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:hcn1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:hdac2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:hras a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :phobic_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:phobic_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans,
+    :Saccharomyces_cerevisiae_S288C .
+
+:hspa5 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:htr1a a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder, :generalized_anxiety_disorder .
+
+:panic_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans .
+
+:htr1b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:sexual_dimorphism_in a owl:ObjectProperty .
+
+:htr1e a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:htr1f a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:htr2c a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:htr7 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:kdm3b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:l1cam a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:lef1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:lyl1 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:manea a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:maoa a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:mc4r a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:mdm2 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:med12 a :Gene;
+  :is_implicated_via_orthology :phobic_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:MGC107876 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:MGC108147 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:ncor1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:ngf a :Gene;
+  :is_marker_via_orthology :separation_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:separation_anxiety_disorder a anx:Disorder;
+  anx:isObservedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:nodal1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:nodal2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:nodal3.1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:nodal5 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:nodal6 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:npy a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:nr3c1 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio;
+  :is_marker_via_orthology :post-traumatic_stress_disorder .
+
+:ntrk2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:oprm1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:pdia3 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:pomc a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:scn1a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:scn2a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:scn3a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:sigmar1 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:slc6a4l a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:tph2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:tsc2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:wfs1 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Drosophila_melanogaster .
+
+:XB5742360 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:XB5810166 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:XB5856184 a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder, :anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:XB5886928 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Xenopus_tropicalis .
+
+:znf462 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Xenopus_tropicalis, :Danio_rerio .
+
+:ache a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:Danio_rerio a anx:Species;
+  :severity_of :anxiety_disorder, :generalized_anxiety_disorder, :post-traumatic_stress_disorder;
+  :susceptibility_to :post-traumatic_stress_disorder, :social_phobia, :anxiety_disorder,
+    :panic_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+:adra2a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:apcs a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:baxa a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:bcl2a a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:bcl2b a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:bdnf a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :post-traumatic_stress_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :post-traumatic_stress_disorder .
+
+:caspa a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:cckbra a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:cntnap2a a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Danio_rerio .
+
+:social_phobia a anx:Disorder;
+  anx:isObservedIn :Danio_rerio, :Drosophila_melanogaster, :Caenorhabditis_elegans .
+
+:cntnap2b a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Danio_rerio .
+
+:comta a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:comtb a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:creb1a a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:creb1b a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:crhb a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:crp1 a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder, :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:crp5 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :acute_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ctnnd2a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ctnnd2b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:cyp3a65 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:cyp3c1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:cyp3c3 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:cyp3c4 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:dnmt3bb.1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:drd2a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:drd2b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:esr2a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:esr2b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:gad1a a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:gad1b a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:gdnfa a :Gene;
+  :is_marker_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:gdnfb a :Gene;
+  :is_marker_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:grin2aa a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:grin2ab a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:hbl1 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:hbl2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:hbl4 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:hrasa a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :phobic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:hrasb a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :phobic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:htr1aa a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :panic_disorder, :anxiety_disorder, :generalized_anxiety_disorder .
+
+:htr1ab a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder, :panic_disorder .
+
+:htr2aa a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:htr2ab a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:htr2b a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:htr2cl1 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder, :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:htr7a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:l1camb a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:mao a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:mbl2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ngfa a :Gene;
+  :is_marker_via_orthology :separation_anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ngfb a :Gene;
+  :is_marker_via_orthology :separation_anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:npy1r a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ntrk2a a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:ntrk2b a :Gene;
+  :is_marker_via_orthology :anxiety_disorder, :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:pomca a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:pomcb a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:slc6a4a a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:slc6a4b a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :obsessive-compulsive_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:wfs1a a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:wfs1b a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:zgc%3A153993 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Danio_rerio .
+
+:5-HT1A a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster;
+  :is_implicated_via_orthology :generalized_anxiety_disorder, :panic_disorder, :anxiety_disorder .
+
+:Drosophila_melanogaster a anx:Species;
+  :sexual_dimorphism_in :generalized_anxiety_disorder;
+  :severity_of :anxiety_disorder, :post-traumatic_stress_disorder;
+  :susceptibility_to :anxiety_disorder, :panic_disorder, :social_phobia .
+
+:5-HT1B a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:5-HT2B a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:5-HT7 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Ace a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Arc2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:AstC-R2 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:CCKLR-17D3 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:CG14015 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:CrebB a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder;
+  anx:expressedIn :Drosophila_melanogaster;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Cyp6a14 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a16 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a17 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a19 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a20 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a22 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a23 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6a9 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6d4 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6v1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp6w1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Cyp9f3 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Dop2R a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Dredd a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:ERp60 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Fntb a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Gad1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:gig a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:HDAC1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:Hsc70-3 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Ih a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Kdm3 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:kto a :Gene;
+  :is_implicated_via_orthology :phobic_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:lectin-22C a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Nmdar2 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:NPFR a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Nrg a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Nrx-IV a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Octα2R a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:p120ctn a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:pan a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:para a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Pdfr a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:pzg a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Ras85D a :Gene;
+  :is_implicated_via_orthology :phobic_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:SerT a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :obsessive-compulsive_disorder, :generalized_anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Trhn a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:Vmat a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Drosophila_melanogaster .
+
+:ace-1 a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:Caenorhabditis_elegans a anx:Species;
+  :severity_of :anxiety_disorder, :post-traumatic_stress_disorder;
+  :susceptibility_to :anxiety_disorder, :social_phobia, :panic_disorder;
+  :sexual_dimorphism_in :generalized_anxiety_disorder .
+
+:ace-4 a :Gene;
+  :is_marker_via_orthology :acute_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:amx-2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cat-1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:ckr-2 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:crh-1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder .
+
+:cyp-13A1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A10 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A11 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A12 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A3 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A4 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A5 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A6 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A7 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13A8 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13B1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:cyp-13B2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:dop-2 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:dop-3 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:dpy-22 a :Gene;
+  :is_implicated_via_orthology :phobic_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:elk-2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:fntb-1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:hda-1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:hda-3 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:hsp-3 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:hsp-4 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:jac-1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:lad-2 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:let-60 a :Gene;
+  :is_implicated_via_orthology :obsessive-compulsive_disorder, :phobic_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:lin-1 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:mod-5 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder, :generalized_anxiety_disorder, :obsessive-compulsive_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:nlr-1 a :Gene;
+  :is_implicated_via_orthology :social_phobia;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:nmr-2 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:npr-12 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:npr-13 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:npr-19 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:npr-24 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:octr-1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:pdi-3 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:pop-1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:seb-3 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:ser-1 a :Gene;
+  :is_implicated_via_orthology :generalized_anxiety_disorder, :obsessive-compulsive_disorder,
+    :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:ser-4 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans;
+  :is_implicated_via_orthology :anxiety_disorder, :panic_disorder, :generalized_anxiety_disorder .
+
+:ser-7 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:tph-1 a :Gene;
+  :is_implicated_via_orthology :panic_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:unc-25 a :Gene;
+  :is_marker_via_orthology :anxiety_disorder;
+  anx:expressedIn :Caenorhabditis_elegans;
+  :is_implicated_via_orthology :anxiety_disorder .
+
+:W08F4.3 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Caenorhabditis_elegans .
+
+:CCH1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
+
+:Saccharomyces_cerevisiae_S288C a anx:Species .
+
+:ERG2 a :Gene;
+  :is_implicated_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
+
+:EUG1 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
+
+:KAR2 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
+
+:PDI1 a :Gene;
+  :is_marker_via_orthology :post-traumatic_stress_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
+
+:RAM1 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
+
+:RPD3 a :Gene;
+  :is_implicated_via_orthology :anxiety_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C;
+  :is_marker_via_orthology :anxiety_disorder .
+
+:SRB8 a :Gene;
+  :is_implicated_via_orthology :phobic_disorder;
+  anx:expressedIn :Saccharomyces_cerevisiae_S288C .
