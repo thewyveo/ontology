@@ -21,11 +21,11 @@ You can install the necessary libraries using pip
 
 1. **Download the Notebook and Ontology File**
    Download both files into the same directory:
-   - `GROUP17-Notebook.ipynb` (the Jupyter Notebook)
-   - `GROUP17-FinalOntology.ttl` (the ontology file)
+   - `Notebook.ipynb` (the Jupyter Notebook)
+   - `FinalOntology.ttl` (the ontology file)
 
 2. **Open the Notebook**
-   Open `GROUP17-Notebook.ipynb` in Jupyter Notebook or in your IDE
+   Open `Notebook.ipynb` in Jupyter Notebook or in your IDE
 
 3. **Run the Notebook**
    - Run each cell in the notebook in order so to avoid errors
@@ -40,10 +40,10 @@ You can install the necessary libraries using pip
    - `query5.png`
 
 ## Notes
-- Make sure the ontology file `GROUP17-FinalOntology.ttl` is in the same directory as the notebook and has the correct name to avoid file not found errors
+- Make sure the ontology file `FinalOntology.ttl` is in the same directory as the notebook and has the correct name to avoid file not found errors
 
 ## Contributors
-- Maggie Cheung
-- Holly McHugh
-- Kayra Özdemir
-- Mehmet Fatih Akcaoglu
+- Maggie C.
+- Holly M.
+- Kayra Ö.
+- M. Fatih A.
